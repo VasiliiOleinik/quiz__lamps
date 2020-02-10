@@ -1,0 +1,132 @@
+body
+  margin: 0
+  font-weight: normal
+  font-size: 16px
+  color: #000000
+  font-family: 'Montserrat', sans-serif
+  background-color: #ffffff
+  position: relative
+  transition: .2s ease-in
+  & *
+    margin: 0
+    padding: 0
+    border: 0
+    outline: 0
+    background-color: transparent
+    box-sizing: border-box
+
+a
+  text-decoration: none
+  transition: .3s
+  color: inherit
+
+ul
+  list-style: none
+
+img
+  max-width: 100%
+
+button
+  cursor: pointer
+  font-family: 'Montserrat', sans-serif
+
+textarea,
+input
+  font-family: 'Montserrat', sans-serif
+
+label
+  cursor: pointer
+  &:focus,
+  &:hover,
+  &:active
+    outline: 0
+    outline-offset: 0
+    -webkit-tap-highlight-color: transparent
+    user-select: none
+
+section
+  flex-grow: 1
+
+select, input, textarea
+  appearance: none
+  border-radius: 0
+  background-color: transparent
+
+.content-wrapper
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  position: relative
+  transition: .3s
+  left: 0
+
+.page-wrapper
+  flex: 1 1
+
+.footer-wrapper
+  flex: 0 1
+
+.box
+  width: 100%
+  display: flex
+  max-width: 1200px
+  padding: 0 30px
+  margin: 0 auto
+  position: relative
+
+.col
+  flex-direction: column
+
+.text-center
+  text-align: center
+
+.col-100
+  flex: 0 0 100%
+  max-width: 100%
+
+.d-flex
+  display: flex
+
+.row
+  min-width: 100%
+  display: flex
+
+.col-50
+  flex: 0 0 50%
+  max-width: 50%
+  -webkit-box-flex: 0
+
+.space-between
+  justify-content: space-between
+
+.justify-center
+  justify-content: center
+
+.justify-end
+  justify-content: flex-end
+
+.justify-stretch
+  justify-content: stretch
+
+.ai-center
+  align-items: center
+
+.ai-end
+  align-items: flex-end
+
+.ai-start
+  align-items: flex-start
+
+.ai-stretch
+  align-items: stretch
+
+.flex-wrap
+  flex-wrap: wrap
+
+.padding-lr
+  padding: 0px 15px
+
+.h-100
+  height: 100%
+.w-100
+  width: 100%
