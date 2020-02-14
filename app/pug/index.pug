@@ -1,4 +1,140 @@
 extends blocks/_layout
 append content
-	main.main
-		.box
+  main.main
+    .start--section
+      img(src="img/main-img.jpg", alt="" class="background--image")
+      .overlay
+      .start--section__content.d-flex.h-100.col.ai-center.justify-center
+        span(class="start--section__text") Осветите мир вокруг себя. со вкусом.
+        span(class="start--section__title") пройдите тест за 2 минуты
+        span(class="start--section__subtitle") и подберите ваш идеальный светильник
+        .start--section__scratch.d-flex.ai-center.justify-center
+          p ответьте на вопросы и получите рассчет стоимости и<br>
+            span персональную скидку
+        button(class="btn" id="startTest") Начать тест
+    .main-test-block.slider
+      .main-test-block__nav-dots
+      .main-test-block__nav-text
+        .nav-text-alem__prev
+          span Назад
+        .nav-text-alem__next.btn.active
+          span Далее
+      form.main-test-block__content(action=""  id="main-form")
+        .content__elem(class="first")
+          img(src="img/2.jpg", alt="" class="background--image")
+          .overlay
+          .content
+            .box.col
+              span(class="test-block__title") Какую территорию нужно осветить?
+              label.label
+                input(id="private-place" name="radio-place" type="radio" value="придомовую, частный сектор" checked)
+                span(class="custom-radio")
+                span(class="label-text") придомовую, частный сектор
+              label.label
+                input(id="park-place" name="radio-place" type="radio" value="парк, сквер")
+                span(class="custom-radio")
+                span(class="label-text") парк, сквер
+              label.label
+                input(id="inside-place" name="radio-place" type="radio" value="внутри помещения")
+                span(class="custom-radio")
+                span(class="label-text") внутри помещения
+              label.label
+                input(id="other-place" name="radio-place" type="radio" value="другое")
+                span(class="custom-radio")
+                span(class="label-text") другое
+        .content__elem(class="second")
+          img(src="img/3.jpg", alt="" class="background--image")
+          .overlay
+          .content
+            .box.col
+              span(class="test-block__title") Какая площадь освещения?
+              label.label
+                input(id="50m2" name="radio-area" type="radio" value="до 50 м2" checked)
+                span(class="custom-radio")
+                span(class="label-text") до 50 м2
+              label.label
+                input(id="from100m2" name="radio-area" type="radio" value="до 100 м2")
+                span(class="custom-radio")
+                span(class="label-text") до 100 м2
+              label.label
+                input(id="from100to200" name="radio-area" type="radio" value="100 - 200 м2")
+                span(class="custom-radio")
+                span(class="label-text") 100 - 200 м2
+              label.label
+                input(id="more200" name="radio-area" type="radio" value="больше 200 м2")
+                span(class="custom-radio")
+                span(class="label-text") больше 200 м2
+        .content__elem(class="third")
+          img(src="img/4.jpg", alt="" class="background--image")
+          .overlay
+          .content
+            .box.col
+              span(class="test-block__title") Какими должны быть светильники?
+              label.label
+                input(id="embedded" name="radio-type" type="radio" value="встроенные (в грунт, ступпеньки и т.д)" checked)
+                span(class="custom-radio")
+                span(class="label-text") встроенные (в грунт, ступпеньки и т.д)
+              label.label
+                input(id="bollards" name="radio-type" type="radio" value="столбики")
+                span(class="custom-radio")
+                span(class="label-text") столбики
+              label.label
+                input(id="ground" name="radio-type" type="radio" value="наземные")
+                span(class="custom-radio")
+                span(class="label-text") наземные
+              label.label
+                input(id="floodlights" name="radio-type" type="radio" value="прожекторы")
+                span(class="custom-radio")
+                span(class="label-text") прожекторы
+              label.label
+                input(id="other-type" name="radio-type" type="radio" value="другое")
+                span(class="custom-radio")
+                span(class="label-text") другое
+        .content__elem(class="fourth")
+          img(src="img/5.jpg", alt="" class="background--image")
+          .overlay
+          .content
+            .box.col
+              span(class="test-block__title") Какой стиль будет у светильников?
+              label.label
+                input(id="classic" name="radio-style" type="radio" value="классика" checked)
+                span(class="custom-radio")
+                span(class="label-text") классика
+              label.label
+                input(id="modern" name="radio-style" type="radio" value="современный" )
+                span(class="custom-radio")
+                span(class="label-text") современный
+              label.label
+                input(id="loft" name="radio-style" type="radio" value="лофт")
+                span(class="custom-radio")
+                span(class="label-text") лофт
+              label.label
+                input(id="unique" name="radio-style" type="radio" value="уникальный дизайн")
+                span(class="custom-radio")
+                span(class="label-text") уникальный дизайн
+        .content__elem(class="fifth")
+          img(src="img/6.jpg", alt="" class="background--image")
+          .overlay
+          .content
+            .box.col
+              span(class="test-block__title") Имеется ли у вас проект или схема участка?
+              label.label
+                input(id="yes" name="radio-proect" type="radio" value="да" checked)
+                span(class="custom-radio")
+                span(class="label-text") да
+              label.label
+                input(id="no" name="radio-proect" type="radio" value="нет" )
+                span(class="custom-radio")
+                span(class="label-text") нет
+        .content__elem(class="sixth")
+          img(src="img/7.jpg", alt="" class="background--image")
+          .overlay
+          .start--section__content.d-flex.h-100.col.ai-center.justify-center
+            .box.col
+              span(class="final--section__text") отлично! остался последний шаг
+              p(class="final--section__title") введите номер телефона и мы сообщим вам 
+                span стоимость проекта и специальные бонусы 
+                | только для вас
+              .final-form
+                input(class="final-form__input" type="text" name="phone" placeholder="Введите телефонный номер*" autocomplete="off")
+                button(type="submit" class="btn" id="sendForm") Получить преложение

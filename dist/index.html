@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/img/favicon.ico" rel="shortcut icon">
+    <link type="text/css" href="css/libs.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <title>CASCADE LAMPS</title>
+  </head>
+  <body>
+    <div class="content-wrapper" id="contentWrapper">
+      <div class="page-wrapper" id="pageWrapper">
+        <header class="header">
+          <div class="box w-100">
+            <div class="header__body d-flex w-100 space-between ai-center">
+              <div class="header__body--logo d-flex col"><a href="/"><img src="img/logo.png" alt="Logo"></a><span>г. Киев, ул. Бориспольская, 9</span></div><span class="header--section">(095) 403 15 80</span><span class="header--section">(050) 822 78 81</span><span class="header--section">(097) 157 57 57</span><span class="header--section d-flex ai-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="#ffffff" d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"></path>
+                </svg>pte@ukr.net</span>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="start--section"><img class="background--image" src="img/main-img.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="start--section__content d-flex h-100 col ai-center justify-center"><span class="start--section__text">Осветите мир вокруг себя. со вкусом.</span><span class="start--section__title">пройдите тест за 2 минуты</span><span class="start--section__subtitle">и подберите ваш идеальный светильник</span>
+              <div class="start--section__scratch d-flex ai-center justify-center">
+                <p>ответьте на вопросы и получите рассчет стоимости и<br><span>персональную скидку</span></p>
+              </div>
+              <button class="btn" id="startTest">Начать тест</button>
+            </div>
+          </div>
+          <div class="main-test-block slider">
+            <div class="main-test-block__nav-dots"></div>
+            <div class="main-test-block__nav-text">
+              <div class="nav-text-alem__prev"><span>Назад</span></div>
+              <div class="nav-text-alem__next btn active"><span>Далее</span></div>
+            </div>
+            <form class="main-test-block__content" action="" id="main-form">
+              <div class="content__elem first"><img class="background--image" src="img/2.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="box col"><span class="test-block__title">Какую территорию нужно осветить?</span>
+                    <label class="label">
+                      <input id="private-place" name="radio-place" type="radio" value="придомовую, частный сектор" checked><span class="custom-radio"></span><span class="label-text">придомовую, частный сектор</span>
+                    </label>
+                    <label class="label">
+                      <input id="park-place" name="radio-place" type="radio" value="парк, сквер"><span class="custom-radio"></span><span class="label-text">парк, сквер</span>
+                    </label>
+                    <label class="label">
+                      <input id="inside-place" name="radio-place" type="radio" value="внутри помещения"><span class="custom-radio"></span><span class="label-text">внутри помещения</span>
+                    </label>
+                    <label class="label">
+                      <input id="other-place" name="radio-place" type="radio" value="другое"><span class="custom-radio"></span><span class="label-text">другое</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="content__elem second"><img class="background--image" src="img/3.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="box col"><span class="test-block__title">Какая площадь освещения?</span>
+                    <label class="label">
+                      <input id="50m2" name="radio-area" type="radio" value="до 50 м2" checked><span class="custom-radio"></span><span class="label-text">до 50 м2</span>
+                    </label>
+                    <label class="label">
+                      <input id="from100m2" name="radio-area" type="radio" value="до 100 м2"><span class="custom-radio"></span><span class="label-text">до 100 м2</span>
+                    </label>
+                    <label class="label">
+                      <input id="from100to200" name="radio-area" type="radio" value="100 - 200 м2"><span class="custom-radio"></span><span class="label-text">100 - 200 м2</span>
+                    </label>
+                    <label class="label">
+                      <input id="more200" name="radio-area" type="radio" value="больше 200 м2"><span class="custom-radio"></span><span class="label-text">больше 200 м2</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="content__elem third"><img class="background--image" src="img/4.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="box col"><span class="test-block__title">Какими должны быть светильники?</span>
+                    <label class="label">
+                      <input id="embedded" name="radio-type" type="radio" value="встроенные (в грунт, ступпеньки и т.д)" checked><span class="custom-radio"></span><span class="label-text">встроенные (в грунт, ступпеньки и т.д)</span>
+                    </label>
+                    <label class="label">
+                      <input id="bollards" name="radio-type" type="radio" value="столбики"><span class="custom-radio"></span><span class="label-text">столбики</span>
+                    </label>
+                    <label class="label">
+                      <input id="ground" name="radio-type" type="radio" value="наземные"><span class="custom-radio"></span><span class="label-text">наземные</span>
+                    </label>
+                    <label class="label">
+                      <input id="floodlights" name="radio-type" type="radio" value="прожекторы"><span class="custom-radio"></span><span class="label-text">прожекторы</span>
+                    </label>
+                    <label class="label">
+                      <input id="other-type" name="radio-type" type="radio" value="другое"><span class="custom-radio"></span><span class="label-text">другое</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="content__elem fourth"><img class="background--image" src="img/5.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="box col"><span class="test-block__title">Какой стиль будет у светильников?</span>
+                    <label class="label">
+                      <input id="classic" name="radio-style" type="radio" value="классика" checked><span class="custom-radio"></span><span class="label-text">классика</span>
+                    </label>
+                    <label class="label">
+                      <input id="modern" name="radio-style" type="radio" value="современный"><span class="custom-radio"></span><span class="label-text">современный</span>
+                    </label>
+                    <label class="label">
+                      <input id="loft" name="radio-style" type="radio" value="лофт"><span class="custom-radio"></span><span class="label-text">лофт</span>
+                    </label>
+                    <label class="label">
+                      <input id="unique" name="radio-style" type="radio" value="уникальный дизайн"><span class="custom-radio"></span><span class="label-text">уникальный дизайн</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="content__elem fifth"><img class="background--image" src="img/6.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="box col"><span class="test-block__title">Имеется ли у вас проект или схема участка?</span>
+                    <label class="label">
+                      <input id="yes" name="radio-proect" type="radio" value="да" checked><span class="custom-radio"></span><span class="label-text">да</span>
+                    </label>
+                    <label class="label">
+                      <input id="no" name="radio-proect" type="radio" value="нет"><span class="custom-radio"></span><span class="label-text">нет</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="content__elem sixth"><img class="background--image" src="img/7.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="start--section__content d-flex h-100 col ai-center justify-center">
+                  <div class="box col"><span class="final--section__text">отлично! остался последний шаг</span>
+                    <p class="final--section__title">введите номер телефона и мы сообщим вам <span>стоимость проекта и специальные бонусы </span>только для вас</p>
+                    <div class="final-form">
+                      <input class="final-form__input" type="text" name="phone" placeholder="Введите телефонный номер*" autocomplete="off">
+                      <button class="btn" type="submit" id="sendForm">Получить преложение</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,524 @@
+.main
+  .background--image
+    position: absolute
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -1
+    top: 0
+    left: 0
+  .overlay
+    position: absolute
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.48)
+    z-index: 1
+    top: 0
+    left: 0
+  .start--section__content
+    position: relative
+    z-index: 2
+    width: 100%
+    & .start--section__text
+      font-weight: 300
+      font-size: 18px
+      line-height: 21px
+      text-align: center
+      color: #FFFFFF
+    & .start--section__title
+      font-size: 35px
+      line-height: 41px
+      color: #FFFFFF
+      text-align: center
+      text-transform: uppercase
+      margin: 7.5px 0px
+    & .start--section__subtitle
+      font-weight: 500
+      font-size: 35px
+      line-height: 41px
+      text-transform: uppercase
+      color: #F8B026
+      margin-bottom: 50px
+    & .start--section__scratch
+      width: 535px
+      min-height: 165px
+      background-image: url('../img/scrath.png')
+      background-size: 100% 110%
+      margin-bottom: 80px
+      & p
+        text-align: center
+        font-weight: 300
+        font-size: 17px
+        line-height: 20px
+        text-align: center
+        color: #000000
+        text-taransform: uppercase
+        & span
+          font-weight: 500
+          color: #825909
+  .second--section
+    display: none
+.section--content
+  position: relative
+  z-index: 2
+  &__status
+    width: 525px
+    height: 25px
+    & .status--item
+      width: 25px
+      height: 25px
+      border: 1px solid #F8B026
+      box-sizing: border-box
+      border-radius: 50%
+      transition: all .2s linear
+      position: relative
+      &:before
+        content: ''
+        display: block
+        height: 1px
+        background: #F8B026
+        position: absolute
+        left: 25px
+        top: 50%
+        transform: translateY(-50%)
+        width: 100px
+      &.active
+        background: #F8B026
+        box-shadow: 0px 0px 15px 4px rgba(248, 176, 38, 0.6)
+        &:before
+          height: 2px
+      &:last-of-type:before
+        display: none
+
+
+
+.content
+  width: 100%
+.main-test-block
+  width: 100%
+  position: absolute
+  top: 0
+  left: 50%
+  transform: translateX(-50%)
+  height: 100%
+  z-index: 4
+  display: none
+  overflow: hidden
+
+  &__nav-dots
+    width: 525px
+    height: 25px
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    justify-content: space-between
+    z-index: 9999
+
+    & .nav-elem
+      width: 25px
+      height: 25px
+      border: 1px solid #F8B026
+      box-sizing: border-box
+      border-radius: 50%
+      transition: all .2s linear
+      position: relative
+
+      &:before
+        content: ''
+        display: block
+        height: 1px
+        background: #F8B026
+        position: absolute
+        left: 25px
+        top: 50%
+        transform: translateY(-50%)
+        width: 75px
+      &.active
+        background: #F8B026
+        box-shadow: 0px 0px 15px 4px rgba(248, 176, 38, 0.6)
+        &:before
+          height: 2px
+      &:last-of-type:before
+        display: none
+
+  &__nav-text
+    position: absolute
+    bottom: 100px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    z-index: 99999
+    width: 100%
+    max-width: 1200px
+    justify-content: space-between
+
+    & .nav-text-alem__next
+      font-family: 'Open Sans', sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      line-height: 25px
+      letter-spacing: 0.015em
+      transition: .2s
+      cursor: pointer
+      position: relative
+      color: rgba(255, 255, 255, 1)
+      opacity: 0.7
+      &:hover,
+      &.active
+        opacity: 1
+        transition: .2s
+
+    & .nav-text-alem__prev
+      background: transparent
+      border-radius: 43px
+      padding: 13px 62px
+      font-weight: 500
+      text-transform: uppercase
+      border: 1px solid #FFFFFF
+      box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, .8)
+      transition: all .2s linear
+      opacity: 1
+      font-family: Roboto
+      font-weight: 300
+      font-size: 20px
+      line-height: 23px
+      color: #FFFFFF
+      cursor: pointer
+
+      &:hover,
+      &.active
+        box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, .8)
+        transition: .2s
+
+  &__content
+    width: 100%
+    height: 100%
+    position: absolute
+    // top: 50%
+    // transform: translateY(-50%)
+
+    & .content__elem
+      width: 100%
+      height: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      position: absolute
+      // display: none
+
+      & .test-block__title
+        font-family: Roboto
+        font-size: 25px
+        line-height: 29px
+        margin-bottom: 20px
+        color: #FFFFFF
+
+      &.first
+        display: flex
+        border-radius: 30px 30px 0px 0px
+      
+      &.third 
+        & .test-block__title
+          margin-bottom: 15px
+
+
+.content__elem.first
+  & .content
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    z-index: 999999
+    position: relative
+
+.content__elem.second
+  & .content
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    z-index: 999999
+    position: relative
+
+    & .label
+      margin-bottom: 15px
+      margin-left: 30px
+
+.content__elem.third
+  & .content
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    z-index: 999999
+    position: relative
+
+    & .content-section
+      margin-bottom: 35px
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      max-width: 515px
+      width: 100%
+
+      & .label
+        margin-bottom: 20px
+        margin-left: 30px
+
+      & .additional-text
+        padding-left: 30px
+        font-family: 'Exo 2', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 24px
+        letter-spacing: 0.02em
+        color: #FFFFFF
+  &.active
+    display: flex
+
+    & .content
+      display: flex
+
+.content__elem.fourth
+  & .content
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    z-index: 999999
+    position: relative
+
+    & .label
+      margin-bottom: 15px
+      margin-left: 30px
+  &.active
+    display: flex
+
+    & .content
+      display: flex
+
+.content__elem.fifth
+  & .content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 100%
+    z-index: 999999
+    position: relative
+
+    & .content-section
+      margin-bottom: 135px
+      display: flex
+      width: 160px
+
+      &:nth-of-type(odd)
+        margin-right: 125px
+
+      & .label
+        display: flex
+        align-items: center
+        margin-left: 30px
+
+        & .label-text
+          display: flex
+          align-items: center
+
+          & img
+            margin-right: 10px
+  &.active
+    display: flex
+
+    & .content
+      display: flex
+
+.content__elem.sixth
+  align-items: flex-start
+
+  & .test-block__title
+    font-family: 'Exo 2', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 43px
+    letter-spacing: 0.015em
+    color: #FFFFFF
+    margin-bottom: 25px
+
+  & .test-block__subtitle
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    letter-spacing: 0.015em
+    color: rgba(255, 255, 255, 0.6)
+    max-width: 640px
+    width: 100%
+    display: flex
+    border-top: 1px solid rgba(255, 255, 255, 0.6)
+    padding-top: 25px
+    margin-bottom: 65px
+
+  & .final-form
+    width: 100%
+    display: flex
+    position: relative
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    max-width: 420px
+    margin: 0 auto
+
+    &__input
+      width: 100%
+      height: 30px
+      border-bottom: 1px solid rgba(255, 255, 255, 0.91)
+      box-sizing: border-box
+      display: flex
+      justify-content: center
+      align-items: center
+      font-family: Roboto
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      line-height: 21px
+      text-align: left
+      font-variant: small-caps
+      color: #FFFFFF
+      transition: .2s
+      margin-bottom: 90px
+
+      &:focus
+        transition: .2s
+        background: rgba(0, 0, 0, 0.41)
+
+    &__submit-btn
+      width: 269px
+      height: 68.9px
+      background: #3ABEC2
+      border-radius: 39.5px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.02em
+      color: #ffffff
+      border: 1px solid #3ABEC2
+      transition: .2s
+
+      &:hover
+        transition: .2s
+        background-color: rgba(58, 190, 194, .2)
+
+
+.label
+  position: relative
+  margin-bottom: 15px
+  margin-left: 30px
+
+  & .label-text
+    font-family: Roboto
+    font-size: 20px
+    line-height: 23px
+    color: #FFFFFF
+    margin-left: 15px
+    user-select: none
+
+    &.bold
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.02em
+
+    &.smaller
+      font-family: 'Exo 2', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.02em
+
+  & input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    height: 0
+    width: 0
+
+    &:checked
+      & ~ .custom-radio
+        &:after
+          display: block
+  .custom-radio
+    &:after
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      background: #F8B026
+
+.custom-radio
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: -30px
+  height: 25px
+  width: 26px
+  border-radius: 50%
+  border: 1px solid #FFFFFF
+  box-sizing: border-box
+  &:after
+    content: ""
+    position: absolute
+    display: none
+
+
+label.invalid
+  position: absolute
+  left: 20px
+  top: calc(100% + 10px)
+  color: #ec5a5a
+
+input.invalid
+  border-color: #ec5a5a !important
+
+.nav-text-elem_circle
+  display: none
+
+.final--section__text
+  font-family: Roboto
+  font-style: normal
+  font-weight: normal
+  font-size: 25px
+  line-height: 29px
+  text-align: center
+  font-variant: small-caps
+  color: #FFFFFF
+  margin-bottom: 12px
+  text-transform: uppercase
+.final--section__title
+  font-family: Roboto
+  font-style: normal
+  font-weight: 300
+  font-size: 25px
+  line-height: 29px
+  text-align: center
+  font-variant: small-caps
+  text-transform: uppercase
+  color: #FFFFFF
+  margin-bottom: 75px
+  & span
+    color: #F8B026
